@@ -1,0 +1,1 @@
+*game in window(as a panel)*
