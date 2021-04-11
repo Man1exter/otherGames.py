@@ -2,11 +2,8 @@
 
 
 
-
-
 def panel():
     print(" ")
-
 
 
 def main():
