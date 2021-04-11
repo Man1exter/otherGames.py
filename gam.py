@@ -22,4 +22,6 @@ def main():
    elif way == 4:
        pass
 
+   print("")
+
 main()
