@@ -1,1 +1,5 @@
 *game in window(as a panel)*
+
+*info about game,author etc..*
+
+*change background if u want*
