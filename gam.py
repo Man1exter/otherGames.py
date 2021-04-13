@@ -9,9 +9,9 @@ def panel():
     print(" ")
 
 def imge():
-    ig = instaloader.Instaloader()
-    dp = input("USERNAME FROM INSTAGRAM")
-    ig.download_profile(dp,profile_pic_only = True)
+    iginit = instaloader.Instaloader()
+    who = input("USERNAME FROM INSTAGRAM")
+    iginit.download_profile(who, profile_pic_only = True)
 
 def main():
    print("WELCOME ON PANEL ABOUT GAME IN WINDOW")
