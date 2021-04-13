@@ -16,6 +16,10 @@ def imge():
     print(" ")
     print("everything is ready....")
 
+
+def ss11():
+    print("1st game tutu.........")
+
 def main():
    print("WELCOME ON PANEL ABOUT GAME IN WINDOW")
    print(" ")
@@ -26,7 +30,7 @@ def main():
    if way == 1:
        pass
    elif way == 2:
-       pass
+       ss11()
    elif way == 3:
        pass
    elif way == 4:
