@@ -9,9 +9,12 @@ def panel():
     print(" ")
 
 def imge():
+    print("it is good if you write lowercase => username <=")
     iginit = instaloader.Instaloader()
     who = input("USERNAME FROM INSTAGRAM ===> ")
     iginit.download_profile(who, profile_pic_only = True)
+    print(" ")
+    print("everything is ready....")
 
 def main():
    print("WELCOME ON PANEL ABOUT GAME IN WINDOW")
