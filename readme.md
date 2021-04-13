@@ -3,3 +3,5 @@
 *info about game,author etc..*
 
 *change background if u want*
+
+*download images from instagram*
