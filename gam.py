@@ -1,10 +1,17 @@
+import instaloader
 
 def panel():
     print("[1] => Info About Application <= ")
     print("[2] => SnakeGame 1s game <= ")
     print("[3] => SecretGame 2s game <= ")
     print("[4] => Info About files/directories <= ")
+    print("[5] => Download Image from INSTAGRAM <= ")
     print(" ")
+
+def imge():
+    ig = instaloader.Instaloader()
+    dp = input("USERNAME FROM INSTAGRAM")
+    ig.download_profile(dp,profile_pic_only = True)
 
 def main():
    print("WELCOME ON PANEL ABOUT GAME IN WINDOW")
@@ -21,7 +28,9 @@ def main():
        pass
    elif way == 4:
        pass
+   elif way == 5:
+       imge()
 
-   print("")
+   print("  ")
 
 main()
