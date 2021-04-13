@@ -17,8 +17,19 @@ def imge():
     print("everything is ready....")
 
 
+
+def infoapp():
+    pass
+
+
+
 def ss11():
     print("1st game tutu.........")
+    print("My first game with pygame...")
+
+
+
+
 
 def main():
    print("WELCOME ON PANEL ABOUT GAME IN WINDOW")
@@ -28,7 +39,7 @@ def main():
    way = int(input("Your choice from menu ==> "))
 
    if way == 1:
-       pass
+       infoapp()
    elif way == 2:
        ss11()
    elif way == 3:
