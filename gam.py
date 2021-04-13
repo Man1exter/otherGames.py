@@ -10,7 +10,7 @@ def panel():
 
 def imge():
     iginit = instaloader.Instaloader()
-    who = input("USERNAME FROM INSTAGRAM")
+    who = input("USERNAME FROM INSTAGRAM ===> ")
     iginit.download_profile(who, profile_pic_only = True)
 
 def main():
