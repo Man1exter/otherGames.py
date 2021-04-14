@@ -1,4 +1,5 @@
 import instaloader
+import sys
 from sgame import seek
 
 def panel():
