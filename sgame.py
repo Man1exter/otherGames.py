@@ -21,7 +21,7 @@ def seek():
 def keyboard():
     keys = pygame.key.get_pressed()
     if keys[pygame.K_d]:
-        pass # += 1
+        pass # d += 1
     if keys[pygame.K_d]:
         pass # s += y
     if keys[pygame.K_d]:
