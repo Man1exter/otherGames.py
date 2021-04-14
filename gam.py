@@ -1,5 +1,5 @@
 import instaloader
-from sgame import function1
+from sgame import seek
 
 
 def panel():
@@ -26,7 +26,7 @@ def infoapp():
 def ss11():
     print("1st game tutu.........")
     print("My first game with pygame...")
-    function1()
+    seek()
 
 
 def main():

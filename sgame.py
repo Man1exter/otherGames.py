@@ -1,5 +1,5 @@
 import pygame
 import gam
 
-def function1():
+def seek():
     print(pygame.__version__)
