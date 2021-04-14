@@ -1,4 +1,6 @@
 import instaloader
+import sys
+from sgame import seek
 
 def panel():
     print("[1] => Info About Application <= ")
@@ -16,6 +18,16 @@ def imge():
     print(" ")
     print("everything is ready....")
 
+
+def infoapp():
+    pass
+
+
+def ss11():
+    print("My first game with pygame...")
+    seek()
+
+
 def main():
    print("WELCOME ON PANEL ABOUT GAME IN WINDOW")
    print(" ")
@@ -24,9 +36,9 @@ def main():
    way = int(input("Your choice from menu ==> "))
 
    if way == 1:
-       pass
+       infoapp()
    elif way == 2:
-       pass
+       ss11()
    elif way == 3:
        pass
    elif way == 4:
