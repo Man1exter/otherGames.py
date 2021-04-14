@@ -1,4 +1,6 @@
 import instaloader
+from sgame import function1
+
 
 def panel():
     print("[1] => Info About Application <= ")
@@ -17,18 +19,14 @@ def imge():
     print("everything is ready....")
 
 
-
 def infoapp():
     pass
-
 
 
 def ss11():
     print("1st game tutu.........")
     print("My first game with pygame...")
-
-
-
+    function1()
 
 
 def main():
