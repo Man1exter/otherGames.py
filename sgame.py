@@ -3,7 +3,7 @@ import sys
 
 def seek():
     print(pygame.__version__)
-    screen = pygame.display.set_mode((1280,720))
+    screen = pygame.display.set_mode((1440,900)) # 1440×900 (16:10)
 
     background = pygame.image.load("./Programmer Backgrounds 15.jpg").convert()
     
