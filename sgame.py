@@ -21,11 +21,11 @@ def seek():
         keys = pygame.key.get_pressed()
         if keys[pygame.K_d]:
           box.x += 1
-        if keys[pygame.K_d]:
+        if keys[pygame.K_s]:
           box.y += 1
-        if keys[pygame.K_d]:
+        if keys[pygame.K_w]:
           box.y -= 1
-        if keys[pygame.K_d]:
+        if keys[pygame.K_a]:
           box.x -= 1
 
         #drawing...
