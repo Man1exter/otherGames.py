@@ -1,5 +1,6 @@
 import instaloader
 import sys
+import pygame
 from sgame import seek
 import io
 from gtts import gTTS
@@ -33,6 +34,18 @@ def ss11():
 
 def voices():
     print(" ")
+    with io.BytesIO() as file:
+        gTTS(text=text, lang="en").write_to_fp(file)
+        file.seek(0)
+        pygame.mixer.init()
+        pygame.mixer.music.load(file)
+        pygame.mixer.music.play()
+        while pygame.mixer.music.get_busy():
+            continue
+
+if __name__ == '__main__':
+    text = input("Your text ==> ")
+    speak(text)
 
 
 def main():
