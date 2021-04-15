@@ -7,8 +7,8 @@ def seek():
 
     background = pygame.image.load("./Programmer Backgrounds 15.jpg").convert()
     
-    player_width = 50
-    player_height = 50
+    player_width = 70
+    player_height = 70
     box = pygame.Rect(10,10,player_width,player_height)
 
     while True: 

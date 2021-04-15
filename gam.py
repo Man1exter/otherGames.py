@@ -1,6 +1,8 @@
 import instaloader
 import sys
 from sgame import seek
+import io
+from gtts import gTTS
 
 def panel():
     print("[1] => Info About Application <= ")
@@ -8,6 +10,7 @@ def panel():
     print("[3] => SecretGame 2s game <= ")
     print("[4] => Info About files/directories <= ")
     print("[5] => Download Image from INSTAGRAM <= ")
+    print("[5] => Voice Channel (yours text) <= ")
     print(" ")
 
 def imge():
@@ -28,6 +31,10 @@ def ss11():
     seek()
 
 
+def voices():
+    print(" ")
+
+
 def main():
    print("WELCOME ON PANEL ABOUT GAME IN WINDOW")
    print(" ")
@@ -45,6 +52,8 @@ def main():
        pass
    elif way == 5:
        imge()
+   elif way == 5:
+       voices()
 
    print("  ")
 
