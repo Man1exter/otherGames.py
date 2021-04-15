@@ -29,5 +29,5 @@ def seek():
 
         #drawing...
         screen.blit(background, [0, 0])
-        pygame.draw.rect(screen,(13,255,0),box)
+        pygame.draw.rect(screen, (13,255,0), box)
         pygame.display.flip()
