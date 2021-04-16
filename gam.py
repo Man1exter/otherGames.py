@@ -11,7 +11,7 @@ def panel():
     print("[3] => SecretGame 2s game <= ")
     print("[4] => Info About files/directories <= ")
     print("[5] => Download Image from INSTAGRAM <= ")
-    print("[5] => Voice Channel (yours text) <= ")
+    print("[6] => Voice Channel (yours text) <= ")
     print(" ")
 
 def imge():
@@ -51,6 +51,7 @@ def main():
    elif way == 6:
 
        print(" ")
+       print("Bot say your text..")
        
        with io.BytesIO() as file:
         gTTS(text=text, lang="en").write_to_fp(file)
@@ -62,8 +63,11 @@ def main():
             continue
 
        if __name__ == '__main__':
-         text = input("Your text ==> ")
+         text = input("Enter your text ==> ")
          speak(text)
+
+   elif way == 7:
+       pass 
 
 
    print("  ")
