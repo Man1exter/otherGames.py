@@ -1,9 +1,11 @@
 import instaloader
 import sys
 import pygame
+import os
 from sgame import seek
 import io
 from gtts import gTTS
+from win32com.client import Dispatch
 
 def panel():
     print("[1] => Info About Application <= ")
@@ -62,6 +64,7 @@ def main():
         pygame.mixer.music.play()
         while pygame.mixer.music.get_busy():
             continue
+        speak = Dispatch("SAPI.SpVoice").Speak
         speak(text)
         text = input("Enter your text ==> ")
 
