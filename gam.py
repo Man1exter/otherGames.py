@@ -32,6 +32,22 @@ def ss11():
     print("My first game with pygame...")
     seek()
 
+def voiceBot():
+    
+       print(" ")
+       
+       print("Bot say your text..")
+
+       engine = pyttsx3.init()
+
+       text = input("Enter Your Text..... =====> ")
+
+       engine.say(text)
+
+       engine.runAndWait()
+
+       print(" ")
+
 def main():
    print("WELCOME ON PANEL ABOUT GAME IN WINDOW")
    print(" ")
@@ -50,17 +66,7 @@ def main():
    elif way == 5:
        imge()
    elif way == 6:
-
-       print(" ")
-       print("Bot say your text..")
-
-       engine = pyttsx3.init()
-
-       text = input("Enter Your Text..... =====> ")
-
-       engine.say(text)
-
-       engine.runAndWait()
+       voiceBot()
        
    elif way == 7:
        pass 
