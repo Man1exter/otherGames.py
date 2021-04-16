@@ -54,6 +54,7 @@ def main():
        print("Bot say your text..")
        
        with io.BytesIO() as file:
+        text = input("Enter your text ==> ")
         gTTS(text=text, lang="en").write_to_fp(file)
         file.seek(0)
         pygame.mixer.init()
@@ -61,10 +62,8 @@ def main():
         pygame.mixer.music.play()
         while pygame.mixer.music.get_busy():
             continue
-
-       if __name__ == '__main__':
-         text = input("Enter your text ==> ")
-         speak(text)
+        speak(text)
+        text = input("Enter your text ==> ")
 
    elif way == 7:
        pass 
