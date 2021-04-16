@@ -4,8 +4,7 @@ import pygame
 import os
 from sgame import seek
 import io
-from gtts import gTTS
-from win32com.client import Dispatch
+import pyttsx3
 
 def panel():
     print("[1] => Info About Application <= ")
@@ -54,20 +53,15 @@ def main():
 
        print(" ")
        print("Bot say your text..")
-       
-       with io.BytesIO() as file:
-        text = input("Enter your text ==> ")
-        gTTS(text=text, lang="en").write_to_fp(file)
-        file.seek(0)
-        pygame.mixer.init()
-        pygame.mixer.music.load(file)
-        pygame.mixer.music.play()
-        while pygame.mixer.music.get_busy():
-            continue
-        speak = Dispatch("SAPI.SpVoice").Speak
-        speak(text)
-        text = input("Enter your text ==> ")
 
+       engine = pyttsx3.init()
+
+       text = input("Enter Your Text..... =====> ")
+
+       engine.say(text)
+
+       engine.runAndWait()
+       
    elif way == 7:
        pass 
 
