@@ -10,6 +10,7 @@ def seek():
     
     player_width = 70
     player_height = 70
+    score = 0
     box = pygame.Rect(10,10,player_width,player_height)
 
     while True: 
@@ -41,6 +42,11 @@ def seek():
           box.x -= 1
 
         #drawing...
+        screen.blit(scoreOfBeer,[0, 0])
         screen.blit(background, [0, 0])
         pygame.draw.rect(screen,(13,255,0),box)
         pygame.display.flip()
+
+
+        #ticking..
+        scoreOfBeer = pygame.font.Font.render(pygame.font.SysFont("Noto Sans",52,f"WYPIŁEŚ {score} RULONDÓW"))
