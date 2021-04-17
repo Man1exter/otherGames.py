@@ -6,4 +6,4 @@
 
 *download images from instagram*
 
-<strong>NEW</strong> *bot say your text*
+<strong>NEW</strong> => *bot say your text*
