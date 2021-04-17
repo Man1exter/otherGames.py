@@ -17,7 +17,8 @@ def seek():
             if event.type == pygame.QUIT:
                 sys.exit(0)
 
-        #moving..
+        # ..moving WASD..
+        
         keys = pygame.key.get_pressed()
         if keys[pygame.K_d]:
           box.x += 1
@@ -26,6 +27,17 @@ def seek():
         if keys[pygame.K_w]:
           box.y -= 1
         if keys[pygame.K_a]:
+          box.x -= 1
+
+        # ..moving ARROWS from keyboard..
+
+        if keys[pygame.K_RIGHT]:
+          box.x += 1
+        if keys[pygame.K_DOWN]:
+          box.y += 1
+        if keys[pygame.K_UP]:
+          box.y -= 1
+        if keys[pygame.K_LEFT]:
           box.x -= 1
 
         #drawing...
