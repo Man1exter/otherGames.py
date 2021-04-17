@@ -5,3 +5,5 @@
 *change background if u want*
 
 *download images from instagram*
+
+<strong>NEW</strong>*bot say your text*
