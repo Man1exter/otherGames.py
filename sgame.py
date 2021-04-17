@@ -41,6 +41,9 @@ def seek():
         if keys[pygame.K_LEFT]:
           box.x -= 1
 
+        #ticking..
+        scoreOfBeer = pygame.font.Font.render(pygame.font.SysFont("Noto Sans",52,f"WYPIŁEŚ {score} RULONDÓW",False,(252, 252, 3)))
+
         #drawing...
         screen.blit(scoreOfBeer,[0, 0])
         screen.blit(background, [0, 0])
@@ -48,5 +51,3 @@ def seek():
         pygame.display.flip()
 
 
-        #ticking..
-        scoreOfBeer = pygame.font.Font.render(pygame.font.SysFont("Noto Sans",52,f"WYPIŁEŚ {score} RULONDÓW",False,(252, 252, 3)))
