@@ -2,6 +2,7 @@ import pygame
 import sys
 
 def seek():
+    pygame.init()
     print(pygame.__version__)
     screen = pygame.display.set_mode((1440,900)) # 1440×900 (16:10)
 
