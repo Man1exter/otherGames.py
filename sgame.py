@@ -2,7 +2,10 @@ import pygame
 import sys
 
 def seek():
+  
     pygame.init()
+    pygame.font.init()
+
     print(pygame.__version__)
     screen = pygame.display.set_mode((1440,900)) # 1440×900 (16:10)
 
@@ -42,11 +45,13 @@ def seek():
           box.x -= 1
 
         #ticking..
-        scoreOfBeer = pygame.font.Font.render(pygame.font.SysFont("Noto Sans",52,f"WYPIŁEŚ {score} RULONDÓW",False,(252, 252, 3)))
+        font_to_score = pygame.font.SysFont('helvetica', 55)
+        font_easy = font_to_score.render("HEY RULONIKOS",
+                                True, (248, 252, 3))
 
         #drawing...
-        screen.blit(scoreOfBeer,[0, 0])
-        screen.blit(background, [0, 0])
+        screen.blit(font_easy, (50, 50))
+        screen.blit(background, (0, 0))
         pygame.draw.rect(screen,(13,255,0),box)
         pygame.display.flip()
 
