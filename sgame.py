@@ -49,4 +49,4 @@ def seek():
 
 
         #ticking..
-        scoreOfBeer = pygame.font.Font.render(pygame.font.SysFont("Noto Sans",52,f"WYPIŁEŚ {score} RULONDÓW"))
+        scoreOfBeer = pygame.font.Font.render(pygame.font.SysFont("Noto Sans",52,f"WYPIŁEŚ {score} RULONDÓW",False,(252, 252, 3)))
