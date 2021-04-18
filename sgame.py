@@ -45,12 +45,12 @@ def seek():
           box.x -= 1
 
         #ticking..
-        font_to_score = pygame.font.SysFont('helvetica', 55)
-        font_easy = font_to_score.render("HEY RULONIKOS",
-                                True, (248, 252, 3))
+        # ...need to push into a background z-index : 1....  #font_to_score = pygame.font.SysFont('helvetica', 55)
+        #font_easy = font_to_score.render("HEY RULONIKOS",
+                                #True, (248, 252, 3))
 
         #drawing...
-        screen.blit(font_easy, (50, 50))
+        #screen.blit(font_easy, (50, 50))
         screen.blit(background, (0, 0))
         pygame.draw.rect(screen,(13,255,0),box)
         pygame.display.flip()
