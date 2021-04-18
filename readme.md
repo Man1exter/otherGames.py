@@ -7,3 +7,5 @@
 *download images from instagram*
 
 <strong>NEW</strong> => *bot say your text*
+
+*info about phonenumbers*
