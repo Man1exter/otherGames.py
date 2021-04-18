@@ -6,6 +6,9 @@ from sgame import seek
 import io
 import pyttsx3
 
+import phonenumbers
+from phonenumbers import geocoder, carrier, timezone
+
 def panel():
     print("[1] => Info About Application <= ")
     print("[2] => SnakeGame 1s game <= ")
@@ -48,6 +51,18 @@ def voiceBot():
 
        print(" ")
 
+def number_phone():
+    print(" ")
+    phone_number1 = phonenumbers.parse("number ==> ")
+
+    #country.. 
+    print(geocoder.description_for_number(phone_number1, 'en'))
+    #services..
+    print(carrier.name_for_number(phone_number1, 'en'))
+    #timezone..
+    print(timezone.time_zones_for_number(phone_number1))
+    print(" ")
+
 def main():
    print("WELCOME ON PANEL ABOUT GAME IN WINDOW")
    print(" ")
@@ -67,9 +82,12 @@ def main():
        imge()
    elif way == 6:
        voiceBot()
-       
    elif way == 7:
+       print(" ")
        pass 
+       print(" ")
+   elif way == 8:
+       number_phone()
 
 
    print("  ")
