@@ -16,6 +16,8 @@ def panel():
     print("[4] => Info About files/directories <= ")
     print("[5] => Download Image from INSTAGRAM <= ")
     print("[6] => Voice Channel (yours text) <= ")
+    print("[7] => PASSSSSSSSSSSSSSSSSSSSSS <= ")
+    print("[8] => info about phonenumbers... <= ")
     print(" ")
 
 def imge():
@@ -51,20 +53,22 @@ def voiceBot():
 
        print(" ")
 
-def number_phone():
+def number_phone_function():
     print(" ")
-    phone_number1 = phonenumbers.parse("number ==> ")
+
+    phone_number = phonenumbers.parse("write phonenumber ")
 
     #country.. 
-    print(geocoder.description_for_number(phone_number1, 'en'))
+    print(geocoder.description_for_number(phone_number, 'en'))
     #services..
-    print(carrier.name_for_number(phone_number1, 'en'))
+    print(carrier.name_for_number(phone_number, 'en'))
     #timezone..
-    print(timezone.time_zones_for_number(phone_number1))
+    print(timezone.time_zones_for_number(phone_number))
+
     print(" ")
 
 def main():
-   print("WELCOME ON PANEL ABOUT GAME IN WINDOW")
+   print("WELCOME ON PANEL ABOUT GAME IN WINDOW + other useful function (programs)")
    print(" ")
    panel()
 
@@ -87,7 +91,7 @@ def main():
        pass 
        print(" ")
    elif way == 8:
-       number_phone()
+       number_phone_function()
 
 
    print("  ")
