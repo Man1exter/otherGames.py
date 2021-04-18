@@ -55,9 +55,13 @@ def number_phone():
     print(" ")
     phone_number1 = phonenumbers.parse("number ==> ")
 
+    #country.. 
     print(geocoder.description_for_number(phone_number1, 'en'))
+    #services..
     print(carrier.name_for_number(phone_number1, 'en'))
+    #timezone..
     print(timezone.time_zones_for_number(phone_number1))
+    print(" ")
 
 def main():
    print("WELCOME ON PANEL ABOUT GAME IN WINDOW")
