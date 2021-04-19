@@ -21,7 +21,7 @@ def seek():
             if event.type == pygame.QUIT:
                 sys.exit(0)
 
-        # ..moving WASD..
+        # ..moving WASD from keyboard..
         
         keys = pygame.key.get_pressed()
         if keys[pygame.K_d]:
