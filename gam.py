@@ -64,14 +64,17 @@ def number_phone_function():
     x2 = phonenumbers.is_possible_number(x)
     print("is possible number? =>",x2)
 
+    x3 = phonenumbers.is_valid_number(x)
+    print("is valid number? =>",x3)
+
     #country.. 
-    # print(geocoder.description_for_number("+48733468290", 'pl'))
+    print("from where is use the number? =>",geocoder.description_for_number(x, 'pl'))
 
     #services..
-    # print(carrier.name_for_number("+48733468290", 'pl'))
+    print("services of phonenumber? =>",carrier.name_for_number(x, 'pl'))
 
     #timezone..
-    # print(timezone.time_zones_for_number("+48733468290"))
+    print("timezone =>",timezone.time_zones_for_number(x))
 
     print(" ")
 
