@@ -55,20 +55,23 @@ def voiceBot():
 
 def number_phone_function():
     print(" ")
-    print("ATTENTION DONT FORGET +48 OR SOMETHING LIKE THAT...")
+    print("ATTENTION DONT FORGET => +48... <= OR SOMETHING LIKE THAT...")
 
-    y = input("write your phonenumber => ")
+    y = input("write phonenumber => ")
+    x = phonenumbers.parse(y, None)
+    print(x)
 
-    x = phonenumbers.parse(y, 'pl')
+    x2 = phonenumbers.is_possible_number(x)
+    print("is possible number? =>",x2)
 
     #country.. 
-    print(geocoder.description_for_number(y, 'pl'))
+    # print(geocoder.description_for_number("+48733468290", 'pl'))
 
     #services..
-    print(carrier.name_for_number(y, 'pl'))
+    # print(carrier.name_for_number("+48733468290", 'pl'))
 
     #timezone..
-    print(timezone.time_zones_for_number(y))
+    # print(timezone.time_zones_for_number("+48733468290"))
 
     print(" ")
 
