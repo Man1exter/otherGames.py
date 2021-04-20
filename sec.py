@@ -1,5 +1,10 @@
 import pygame
 import sys
 
-def geckon():
-    print(" ")
+class Game(object):
+    def __init__(self):
+        pass
+
+
+if __name__ == "__main__":
+    Game()
