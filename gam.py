@@ -29,10 +29,8 @@ def imge():
     print(" ")
     print("everything is ready....")
 
-
 def infoapp():
     pass
-
 
 def ss11():
     print("My first game with pygame...")
