@@ -3,6 +3,7 @@ import sys
 import pygame
 import os
 from sgame import seek
+from sec import geckon
 import io
 import pyttsx3
 
@@ -36,6 +37,10 @@ def infoapp():
 def ss11():
     print("My first game with pygame...")
     seek()
+
+def ss12():
+    print("SECRET GAME ABOUT RULONICKA BANDICKA..")
+    geckon()
 
 def voiceBot():
     
@@ -90,7 +95,7 @@ def main():
    elif way == 2:
        ss11()
    elif way == 3:
-       pass
+       ss12
    elif way == 4:
        pass
    elif way == 5:
@@ -103,7 +108,6 @@ def main():
        print(" ")
    elif way == 8:
        number_phone_function()
-
 
    print("  ")
 
