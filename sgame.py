@@ -9,11 +9,15 @@ def seek():
     print(pygame.__version__)
     screen = pygame.display.set_mode((1440,900)) # 1440×900 (16:10)
 
+    max_tps = 70.0
+    clock = pygame.time.Clock()
+    delta = 0.0
+
     background = pygame.image.load("./Programmer Backgrounds 15.jpg").convert()
     
     player_width = 70
     player_height = 70
-    score = 0
+    score = 0 # to sum points in all time the game life..
     box = pygame.Rect(10,10,player_width,player_height)
 
     while True: 
@@ -21,7 +25,12 @@ def seek():
             if event.type == pygame.QUIT:
                 sys.exit(0)
 
-        # ..moving WASD..
+        # ..time section TPS..
+        delta = clock.tick()
+        while delta > 1 / max_tps:
+              delta -= 1 / max_tps
+
+        # ..moving WASD from keyboard..
         
         keys = pygame.key.get_pressed()
         if keys[pygame.K_d]:
