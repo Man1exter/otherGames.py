@@ -26,6 +26,7 @@ def seek():
                 sys.exit(0)
 
         # ..time section TPS..
+        delta = clock.tick()
         while delta > 1 / max_tps:
               delta -= 1 / max_tps
 
