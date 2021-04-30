@@ -14,12 +14,19 @@ def seek():
     delta = 0.0
 
     background = pygame.image.load("./Programmer Backgrounds 15.jpg").convert()
-    player = pygame.image.load('./rulon223223.png').convert()
+    player_img = pygame.image.load('./rulon223223.png').convert()
+
+    # IMAGE = pg.image.load('an_image.png').convert()  # or .convert_alpha()
+    # Create a rect with the size of the image.
+    # rect = IMAGE.get_rect()
+    # rect.center = (200, 300)
+    #screen.blit(IMAGE, rect)
     
     player_width = 70
     player_height = 70
     score = 0 # to sum points in all time the game life..
     box = pygame.Rect(10,10,player_width,player_height)
+
 
     while True: 
         for event in pygame.event.get():
