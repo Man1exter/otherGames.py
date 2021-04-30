@@ -4,15 +4,36 @@ class Game(object):
 
     # initialization the all constructs the game...
     def __init__(self):
-        pass
+        pygame.init()
+        pygame.font.init()
+
+        while True: 
+         for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                sys.exit(0)
  
     # ticking the tps and other...
     def tick(self):
-        pass
+        max_tps = 70.0
+        clock = pygame.time.Clock()
+        delta = 0.0
+
+        delta = clock.tick()
+        while delta > 1 / max_tps:
+              delta -= 1 / max_tps
 
     # drawing elements on the screen..
     def drawing(self):
-        pass
+        screen = pygame.display.set_mode((1440,900)) # 1440×900 (16:10)
+        background = pygame.image.load("./Programmer Backgrounds 15.jpg").convert()
+
+        player_width = 70
+        player_height = 70
+        box = pygame.Rect(10,10,player_width,player_height)
+
+        screen.blit(background, (0, 0))
+        pygame.draw.rect(screen,(13,255,0),box)
+        pygame.display.flip()
 
 
 class Player(object):
