@@ -65,3 +65,5 @@ def seek():
         pygame.display.flip()
 
 
+if __name__ =="__main__":
+  seek()
