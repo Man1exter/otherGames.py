@@ -13,7 +13,7 @@ def seek():
     clock = pygame.time.Clock()
     delta = 0.0
 
-    background = pygame.image.load("./Programmer Backgrounds 15.jpg").convert()
+    #background = pygame.image.load("./Programmer Backgrounds 15.jpg").convert()
     player_img = pygame.image.load('./rulon223223.png').convert()
 
     # IMAGE = pg.image.load('an_image.png').convert()  # or .convert_alpha()
@@ -68,7 +68,13 @@ def seek():
 
         #drawing...
         #screen.blit(font_easy, (50, 50))
-        screen.blit(background, (0, 0))
+        
+        # rulonik image
+        rect_player = player_img.get_rect()
+        rect_player.center = (50, 50) # position
+        screen.blit(player_img, rect_player)
+
+        #screen.blit(background, (0, 0))
         pygame.draw.rect(screen,(13,255,0),box)
         pygame.display.flip()
 
