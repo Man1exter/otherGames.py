@@ -3,7 +3,7 @@ import sys
 import pygame
 import os
 from sgame import seek
-from sec import geckon
+from sec import Game
 import io
 import pyttsx3
 
@@ -38,7 +38,7 @@ def ss11():
 
 def ss12():
     print("SECRET GAME ABOUT RULONICKA BANDICKA..")
-    geckon()
+    Game()
 
 def voiceBot():
     
