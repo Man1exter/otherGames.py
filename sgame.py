@@ -69,10 +69,15 @@ def seek():
         #drawing...
         #screen.blit(font_easy, (50, 50))
 
-        # rulonik image as rect with image
+        # rulonik image as rect with image : 
+
         rect_player = player_img.get_rect()
         rect_player.center = (50, 50) # position
         screen.blit(player_img, rect_player)
+        screen.blit(screen,rect_player)
+
+        # look_1 = pygame.image.load('data\\png\\look1.png').convert_alpha()
+        # look_1 = pygame.transform.smoothscale(look_1, (new_width, new_height)) 
 
 
         screen.blit(background, (0, 0))
