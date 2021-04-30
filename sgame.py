@@ -14,6 +14,7 @@ def seek():
     delta = 0.0
 
     background = pygame.image.load("./Programmer Backgrounds 15.jpg").convert()
+    player = pygame.image.load('./rulon223223.png').convert()
     
     player_width = 70
     player_height = 70
