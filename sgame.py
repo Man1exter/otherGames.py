@@ -7,7 +7,7 @@ def seek():
     pygame.font.init()
 
     print(pygame.__version__)
-    screen = pygame.display.set_mode((1440,900)) # 1440×900 (16:10)
+    screen = pygame.display.set_mode((1600,1024)) # 1440×900 (16:10) v 	1600×1024 (16:10) -> to show the image after the screen
 
     max_tps = 70.0
     clock = pygame.time.Clock()
@@ -24,9 +24,9 @@ def seek():
     
     player_width = 70
     player_height = 70
-    score = 0 # to sum points in all time the game life..
     box = pygame.Rect(10,10,player_width,player_height)
 
+    score = 0 # to sum points in all time the game life..
 
     while True: 
         for event in pygame.event.get():
@@ -69,14 +69,16 @@ def seek():
         #drawing...
         #screen.blit(font_easy, (50, 50))
 
-        # rulonik image
+        # rulonik image as rect with image
         rect_player = player_img.get_rect()
         rect_player.center = (50, 50) # position
         screen.blit(player_img, rect_player)
 
+
         screen.blit(background, (0, 0))
         pygame.draw.rect(screen,(13,255,0),box)
         pygame.display.flip()
+        pygame.display.update()
 
 
 if __name__ =="__main__":
